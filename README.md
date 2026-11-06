@@ -22,6 +22,7 @@
 | [**academic-tikz**](https://github.com/Eastr5/academic-tikz) | 📐 论文级 TikZ / PGFPlots 绘图技能包，187 个模板全部真实编译过——编译不过的活该被删 |
 | [**literature-access-skills**](https://github.com/Eastr5/literature-access-skills) | 📚 文献检索 → 按 DOI 批量下全文 → 进 Zotero，一条链跑通，不人肉搬运 |
 | [**skill-router-v3**](https://github.com/Eastr5/skill-router-v3) | 🔀 给 AI coding agent 用的 MCP / Skill / Tool 路由器，跨 Trae / Claude / Cursor / VSCode |
+| [**github-profile-blocks**](https://github.com/Eastr5/github-profile-blocks) | 🧩 把主页 README 画成深浅双主题设计卡片的 WorkBuddy skill，含手绘雷达 / 时间线与一键推送 |
 
 ## 🎵 平时
 
