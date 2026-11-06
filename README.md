@@ -26,11 +26,11 @@
 ## 🎵 平时
 
 - 爱好：Hip-hop 音乐。
-- 特殊爱好：和 AI 对话。2023 年左右 ChatGPT 3.5 出现时就开始保持对话，也一直关注前沿模型，从 3.5 到 4o，再到 Gemini；经历了对话时代、IDE 时代，再到 Agent 时代，算是自己对 AI 发展的一段刻画。
+- 特殊爱好：和 AI 对话。2023 年左右 ChatGPT 3.5 出现时就开始保持对话，也一直关注前沿模型，从 3.5 到 4o，再到 Gemini，再到现在的 Claude、Codex 等；经历了对话时代、IDE 时代，再到 Agent 时代，算是自己对 AI 发展的一段刻画。
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/ai-timeline-dark.png">
-  <img src="assets/ai-timeline-light.png" width="820" alt="AI 发展链条：从 2023 年至今，依次经历对话时代、IDE 时代、Agent 时代；下方标注持续关注的模型 GPT-3.5、GPT-4o、Gemini。">
+  <img src="assets/ai-timeline-light.png" width="820" alt="AI 发展链条：从 2023 年至今，依次经历对话时代、IDE 时代、Agent 时代；下方标注持续关注的 GPT-3.5、GPT-4o、Gemini，以及如今的 Claude、Codex 等。">
 </picture>
 
 ## 📫 联系
@@ -64,6 +64,6 @@
 
 另一条线是面向海外用户的分层行为标签体系：拉了算法、产品、数据三方同学共建，业务上涉及身份核验与风控场景；以及向数据科学团队提归因需求时，先给分层框架和参考 SQL，而不是只丢一个问题过去。
 
-爱好：Hip-hop 音乐。特殊爱好：和 AI 对话。2023 年左右 ChatGPT 3.5 出现时就开始保持对话，持续关注前沿模型，从 3.5 到 4o 再到 Gemini；经历了对话时代、IDE 时代，再到 Agent 时代，算是自己对 AI 发展的一段刻画。
+爱好：Hip-hop 音乐。特殊爱好：和 AI 对话。2023 年左右 ChatGPT 3.5 出现时就开始保持对话，持续关注前沿模型，从 3.5 到 4o 再到 Gemini，再到现在的 Claude、Codex 等；经历了对话时代、IDE 时代，再到 Agent 时代，算是自己对 AI 发展的一段刻画。
 
 </details>
