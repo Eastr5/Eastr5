@@ -17,8 +17,8 @@
 把产品经理的能力拆成五个维度后，通用产品经理和 AI 产品经理的差别主要在中间三维：能力边界、系统设计、评测与验证。普通产品的行为由代码决定，AI 产品的行为由模型决定，所以要先判断边界、再设计约束结构、最后用评测把「好不好」变成可观测的东西。下面这张图是相对侧重的示意，不是能力测评。
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Eastr5/Eastr5/main/assets/capability-radar-dark.png">
-  <img src="https://raw.githubusercontent.com/Eastr5/Eastr5/main/assets/capability-radar-light.png" alt="五个能力维度上通用产品经理与 AI 产品经理的相对侧重示意" width="380">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/capability-radar-dark.png">
+  <img src="assets/capability-radar-light.png" alt="五个能力维度上通用产品经理与 AI 产品经理的相对侧重示意" width="380">
 </picture>
 
 ## 🛠️ 项目：问题与取舍
