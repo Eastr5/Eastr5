@@ -68,3 +68,7 @@
 爱好：Hip-hop 音乐。特殊爱好：和 AI 对话。2023 年左右 ChatGPT 3.5 出现时就开始保持对话，持续关注前沿模型，从 3.5 到 4o 再到 Gemini，再到现在的 Claude、Codex 等；经历了对话时代、IDE 时代，再到 Agent 时代，算是自己对 AI 发展的一段刻画。
 
 </details>
+
+---
+
+<p align="center">2023 年开始和 AI 对话，现在还在和它对话——<br>只是问题从「你能做什么」变成了 <strong>「这件事该不该交给你」</strong>。</p>
