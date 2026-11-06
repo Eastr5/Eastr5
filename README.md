@@ -8,9 +8,6 @@
   <img src="assets/block-02-light.png" width="820" alt="岗位理解：五个维度里 AI 产品经理多出来的是能力边界、系统设计、评测与验证；附判断链。">
 </picture>
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/capability-radar-dark.png"><img src="assets/capability-radar-light.png" width="360" alt="五个能力维度上通用产品经理与 AI 产品经理的相对侧重示意"></picture></p>
-<p align="center">五个维度上的相对侧重示意，非能力测评或个人评分</p>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-03-dark.png">
   <img src="assets/block-03-light.png" width="820" alt="项目与实习判断：ChatBI 三层幻觉风控、UGC 指标、投放 Agent 的技术选型与系统边界。">
