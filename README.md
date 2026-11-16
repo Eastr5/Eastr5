@@ -1,3 +1,5 @@
+<p align="center"><sub>中文为默认 · <strong>English version</strong> 在页面底部（点击展开） · <a href="https://eastr5.github.io/blog/?lang=en">切换式双语主页 ↗</a></sub></p>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-01-dark.png">
   <img src="assets/block-01-light.png" width="820" alt="自我介绍：张世昌，中央财经大学电子商务本科（商务智能方向），校内推免至产业经济学硕士（数字经济方向，2028 届），AI 产品 / 数据产品方向；2026 年 4–7 月在一家外资游戏公司新建的 AI 部门做 AI 产品经理，负责海外投放方向。">
@@ -72,3 +74,81 @@
 ---
 
 <p align="center">2023 年开始和 AI 对话，现在还在和它对话——<br>只是问题从「你能做什么」变成了 <strong>「这件事该不该交给你」</strong>。</p>
+
+---
+
+<details>
+<summary><strong>English version</strong> · 点击展开 / click to expand</summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/block-01-en-dark.png">
+  <img src="assets/block-01-en-light.png" width="820" alt="About Shawn Zhang. MSc candidate in Industrial Economics, Digital Economy track, at the Central University of Finance and Economics, class of 2028; BSc in E-Commerce with a Business Intelligence track. AI product manager, open to internships in AI product, data and risk. From April to July 2026, worked on overseas user acquisition in a newly built AI team at a global gaming company.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/block-02-en-dark.png">
+  <img src="assets/block-02-en-light.png" width="820" alt="How I see the role. A radar chart comparing relative emphasis of a general product manager and an AI product manager across five dimensions: value, capability boundaries, system design, evaluation, and delivery. The extra weight sits in the middle three. The chart is schematic, not a capability score.">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/block-03-en-dark.png">
+  <img src="assets/block-03-en-light.png" width="820" alt="Selected work. ChatBI used a business metadata dictionary, dynamic few-shot examples and AST validation for Text2SQL accuracy; UGC sentiment mining used a sliding-window alert and CPIV / VPV metrics; an ad agent was reduced to atomic tools with the main flow in the backend.">
+</picture>
+
+## Public skill repositories
+
+Four skill repos for AI coding agents. This is a separate line of work from the product roles above.
+
+| Repo | One line |
+| --- | --- |
+| [**academic-tikz**](https://github.com/Eastr5/academic-tikz) | Publication-grade TikZ / PGFPlots diagram skills, 187 templates, every one actually compiled |
+| [**literature-access-skills**](https://github.com/Eastr5/literature-access-skills) | Literature search to bulk full-text download by DOI into Zotero, one chain, no manual copying |
+| [**skill-router-v3**](https://github.com/Eastr5/skill-router-v3) | MCP / Skill / Tool router for AI coding agents, works across Trae, Claude, Cursor and VSCode |
+| [**github-profile-blocks**](https://github.com/Eastr5/github-profile-blocks) | A WorkBuddy skill that draws this profile README as light/dark design cards, with hand-drawn radar and timeline |
+
+## Off hours
+
+- Hip-hop.
+- A long-running conversation with AI. I started around GPT-3.5 in 2023 and have followed frontier models since, from 4o to Gemini to today's Claude and Codex. Chat era, IDE era, Agent era: it doubles as a small map of how I got here.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ai-timeline-en-dark.png">
+  <img src="assets/ai-timeline-en-light.png" width="820" alt="A timeline of AI eras from 2023 to now: chat era, IDE era, agent era, with the models followed along the way from GPT-3.5 and GPT-4o to Gemini, Claude and Codex.">
+</picture>
+
+## Contact
+
+`2026212853@email.cufe.edu.cn` · WeChat: `eastr5` · [Portfolio and writing](https://eastr5.github.io/blog/)
+
+### Plain text version (for copy, search and screen readers)
+
+
+I hold a BSc in E-Commerce (Business Intelligence track) from the Central University of Finance and Economics, and was recommended into the MSc in Industrial Economics, Digital Economy track, graduating in 2028. I work on AI products and data products, focused on where AI meets a concrete business scenario, especially growth and risk.
+
+From April to July 2026 I was an AI product manager in a newly built AI team at a global gaming company, on overseas user acquisition. I see that job as two things: stripping a surface request down to the real one, and deciding which parts belong to the model and which do not. Building things is how I probe the boundary, not the point of the job. I have also built a Text2SQL data product and a UGC commercial value metric system from zero.
+
+I spend more time writing requirements, setting boundaries and designing evaluation criteria than writing code. SQL, Python and n8n are my everyday tools, but I care more about whether a feature should exist and how we will tell if it worked. On technical questions I care most about whether something can be translated into a decision, for example how to trade off quality, cost and latency.
+
+Splitting product management into five dimensions, a general PM and an AI PM differ mainly in the middle three: capability boundaries, system design, and evaluation. A normal product behaves according to code, so you can predict it once written. An AI product behaves according to a model, so you first judge the boundary, then design the constraint structure, and finally use evals to make "good" observable. The five dimensions are problem and value, capability boundaries, system design, evaluation, and delivery constraints. The radar is a sketch of relative emphasis, not a capability assessment or a personal score.
+
+| Project | Problem | Key tradeoff |
+| --- | --- | --- |
+| **ChatBI** (Text2SQL) | Small merchants need analysts to run data queries | Accuracy cannot come from prompts alone, so I built three layers of control: a business metadata dictionary, dynamic few-shot examples and AST validation, instead of tuning the prompt further |
+| **UGC sentiment mining** | Negative signals in reviews surface too late | Turned static classification into a sliding time-window alert, and designed CPIV / VPV metrics so the result maps onto an operator action |
+| **Sales forecast and stockout alert** | Stockouts and overstock happen at the same time | Used WRMSSE instead of a generic error metric so the model's optimisation direction matches financial risk |
+
+At the gaming company, the business line was overseas user acquisition. What follows is about method only and contains no internal company data.
+
+- **Technical selection is a boundary decision.** I evaluated Agent Loop and A2A, and given model capability and framework maturity at the time, chose to reduce AI to atomic tools with the main flow in the backend. Rule-based diagnosis stayed in code; open-ended generation, which needed routing between different solutions, went to the model. That was a tradeoff under constraints, not a claim that AI could not do it.
+- **Building a prototype is becoming table stakes.** Tools like Cursor have lowered that barrier for everyone. What is harder is deciding what is worth building, how to judge whether an agent is any good, and how to carry the result through to a business outcome.
+- **A prompt is a product contract.** Input data contracts, output format, enum meanings, exception boundaries, self checks before execution: this layer is the same job as writing a PRD. Domain knowledge is then split into scenario-loaded skills rather than stuffed into one long prompt.
+- **Defining "good".** Building a test set and telling whether a change made things better or worse is the biggest difference between AI products and normal ones. I would rather put my time here than build one more prototype.
+- **Boundaries belong in the document.** The system generates plans; the media buyer is the operator. Over three months I ran the full path from frontend and API through backend to deployment, and built an MCP integration for two data sources, but the project never went live. No demo should imply one-click scaling.
+
+A second line of work was a layered behavioural tagging system for overseas users, built jointly with algorithm, product and data colleagues, involving identity verification and risk scenarios. When I raised attribution requirements with the data science team, I brought a layered framework and reference SQL rather than just a question.
+
+Off hours: hip-hop, and a long-running conversation with AI that started around GPT-3.5 in 2023.
+
+<p align="center">I started talking to AI in 2023 and still do.<br>The question changed from <strong>"what can you do"</strong> to <strong>"should this be yours to do"</strong>.</p>
+
+</details>
