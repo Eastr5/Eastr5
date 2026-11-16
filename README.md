@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-01-dark.png">
-  <img src="assets/block-01-light.png" width="820" alt="自我介绍：张世昌，中央财经大学电子商务本科（商务智能方向），校内推免至产业经济学硕士（数字经济方向，2028 届），AI 产品 / 数据产品方向；2026 年 4–7 月在一家外资游戏公司新建的 AI 部门做 AI 产品经理，负责海外投放方向。">
+  <img src="assets/block-01-light.png" width="820" alt="自我介绍：张世昌，中央财经大学电子商务本科（商务智能方向），校内推免至产业经济学硕士（数字经济方向，2028 届），目标岗位 AI 产品经理，业务方向为金融经济相关或纯 AI 产品；2026 年 4–7 月在 AVIA（AviaGames，美资手游）AI 中台做算法产品经理，负责海外投放。">
 </picture>
 
 <picture>
@@ -12,7 +12,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-03-dark.png">
-  <img src="assets/block-03-light.png" width="820" alt="具体经历：ChatBI 三层幻觉风控、UGC 指标、投放 Agent 的技术选型与系统边界。">
+  <img src="assets/block-03-light.png" width="820" alt="具体经历：自建项目 ChatBI 三层校验与 UGC 指标；AVIA 实习的一键创编 Agent、回本模型归因与用户画像标签体系。">
 </picture>
 
 ## 📦 公开的 skills 仓库
@@ -43,13 +43,15 @@
 <details>
 <summary>纯文本版（便于复制、检索与朗读）</summary>
 
-中央财经大学电子商务本科（商务智能方向），校内推免至产业经济学硕士（数字经济方向，2028 届）。现在做 AI 产品 / 数据产品方向，关注的是 AI × 具体场景，尤其是增长和风控。
+中央财经大学电子商务本科（商务智能方向），校内推免至产业经济学硕士（数字经济方向，2028 届）。目标岗位是 AI 产品经理，业务方向希望是金融经济相关场景，或者纯 AI 产品，两者都在考虑。
 
-2026 年 4–7 月在一家外资游戏公司新建的 AI 部门做 AI 产品经理，负责海外投放方向。我把这份工作理解成两件事：把表面需求剥成真实需求，以及判断哪些交给模型、哪些不交——动手搭东西是探边界的手段，不是目的。自己也从 0 到 1 做过 Text2SQL 取数产品和 UGC 商业价值指标体系。
+2026 年 4–7 月在 AVIA（AviaGames，美资手游公司）AI 中台做算法产品经理，负责海外投放。我把这份工作理解成两件事：把表面需求剥成真实需求，以及判断哪些交给模型、哪些不交——动手搭东西是探边界的手段，不是目的。自己也从 0 到 1 做过 Text2SQL 取数产品和 UGC 商业价值指标体系。
 
 写需求文档、定边界、设计评测口径的时间比写代码多。SQL / Python / n8n 是常用工具，但更在意一个功能该不该做、上线后用什么判断它有效；技术原理上更关心它能不能翻译成决策，比如质量、成本、延迟怎么权衡。
 
 把产品经理的能力拆成五个维度后，通用产品经理和 AI 产品经理的差别主要在中间三维：能力边界、系统设计、评测与验证。普通产品的行为由代码决定，写完就能预期；AI 产品的行为由模型决定，所以要先判断边界、再设计约束结构、最后用评测把「好不好」变成可观测的东西。五个维度是问题与价值、能力边界、系统设计、评测与验证、落地与约束。雷达图是相对侧重的示意，不是能力测评或个人评分。
+
+### 自建项目
 
 | 项目 | 要解决的问题 | 关键取舍 |
 | --- | --- | --- |
@@ -57,13 +59,17 @@
 | **UGC 情感挖掘** | 评论里的负面信号发现得太晚 | 把静态分类做成滑动时间窗口的预警，并自研 CPIV / VPV 指标，让结果能直接对应到运营动作 |
 | **销售预测与库存预警** | 「断货」和「滞销」同时存在 | 用 WRMSSE 替代通用误差指标，让模型优化方向和财务风险对齐 |
 
-2026 年 4–7 月，在一家外资游戏公司新建的 AI 部门做 AI 产品经理，业务线是海外投放。下面只写方法层面的判断，不涉及公司内部数据。
+### AVIA 实习（AI 中台 · 算法产品经理）
+
+2026 年 4–7 月在 AVIA（AviaGames）AI 中台实习，业务线是海外投放。下面只写方法层面的判断，不涉及公司内部数据。
+
+三条工作线各自留下的结果：一键创编 Agent 沉淀了 28 个问题 ID 与 17 维素材标签，推动架构从 Dify 演进到 A2A；回本模型准度归因覆盖 9 款产品 40 周数据，量出大预算产品 K15/6 达标 93%、中小预算不足 30%，并附五层归因框架与参考 SQL；用户画像标签体系做了 L1 到 L3 分层与互斥规则，成了团队的统一语言。
 
 - **技术选型是一次边界判断。** 评估过 Agent Loop 和 A2A，基于当时的模型能力和框架成熟度，选择把 AI 降成原子化 Tools、主流程交给后端；诊断按规则检查用代码控流程，创编要路由到不同解法才交给模型。这是约束下的取舍，不是「AI 做不到」。
 - **会搭原型正在变成基本功。** Cursor 这类工具把搭建门槛降给了所有人，更难的是决定什么值得搭、怎么判断 Agent 好不好用、能不能把东西推到业务结果上。
 - **Prompt 是产品契约。** 输入数据契约、输出格式、枚举含义、异常边界、执行前自检，这一层和写 PRD 是同一件事；领域知识再拆成按场景加载的 Skills，避免把所有规则塞进一条长提示词。
 - **怎么定义「好」。** 建测试集、判断一次改动是变好还是变差，是 AI 产品和普通产品最不一样的地方。我现在更愿意把精力放在这上面，而不是多搭一个原型。
-- **边界要写进文档。** 系统负责生成方案，投手是 Operator；三个月里跑通了从前端、API、后端到部署的全流程，也自建过 MCP 接两个数据源，但项目最终没有上线。对外演示不暗示「一键上量」。
+- **边界要写进文档。** 系统负责生成方案，投手是 Operator；诊断与创编链路已跑通，自动下发还停在 Payload 预览与 mock 阶段，对外演示不暗示「一键上量」。这不是项目失败，是当时明确的交付边界。
 
 另一条线是面向海外用户的分层行为标签体系：拉了算法、产品、数据三方同学共建，业务上涉及身份核验与风控场景；以及向数据科学团队提归因需求时，先给分层框架和参考 SQL，而不是只丢一个问题过去。
 
@@ -82,7 +88,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-01-en-dark.png">
-  <img src="assets/block-01-en-light.png" width="820" alt="About Shawn Zhang. MSc candidate in Industrial Economics, Digital Economy track, at the Central University of Finance and Economics, class of 2028; BSc in E-Commerce with a Business Intelligence track. AI product manager, open to internships in AI product, data and risk. From April to July 2026, worked on overseas user acquisition in a newly built AI team at a global gaming company.">
+  <img src="assets/block-01-en-light.png" width="820" alt="About Shawn Zhang. MSc candidate in Industrial Economics, Digital Economy track, at the Central University of Finance and Economics, class of 2028; BSc in E-Commerce with a Business Intelligence track. AI product manager, open to internships on finance and economics related products, or on pure AI products. From April to July 2026, worked as an algorithm product manager on the AI platform team at AVIA (AviaGames), a US-funded mobile games company.">
 </picture>
 
 <picture>
@@ -92,7 +98,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-03-en-dark.png">
-  <img src="assets/block-03-en-light.png" width="820" alt="Selected work. ChatBI used a business metadata dictionary, dynamic few-shot examples and AST validation for Text2SQL accuracy; UGC sentiment mining used a sliding-window alert and CPIV / VPV metrics; an ad agent was reduced to atomic tools with the main flow in the backend.">
+  <img src="assets/block-03-en-light.png" width="820" alt="Selected work. Self-built projects include ChatBI with a three-layer validation chain and UGC sentiment mining with CPIV / VPV metrics. At AVIA the work covered a creative Agent, payback model attribution and a user profile tagging system.">
 </picture>
 
 ## Public skill repositories
@@ -123,13 +129,15 @@ Four skill repos for AI coding agents. This is a separate line of work from the 
 ### Plain text version (for copy, search and screen readers)
 
 
-I hold a BSc in E-Commerce (Business Intelligence track) from the Central University of Finance and Economics, and was recommended into the MSc in Industrial Economics, Digital Economy track, graduating in 2028. I work on AI products and data products, focused on where AI meets a concrete business scenario, especially growth and risk.
+I hold a BSc in E-Commerce (Business Intelligence track) from the Central University of Finance and Economics, and was recommended into the MSc in Industrial Economics, Digital Economy track, graduating in 2028. I am aiming at AI product manager roles, with a preference for finance and economics related products or for pure AI products; both are open.
 
-From April to July 2026 I was an AI product manager in a newly built AI team at a global gaming company, on overseas user acquisition. I see that job as two things: stripping a surface request down to the real one, and deciding which parts belong to the model and which do not. Building things is how I probe the boundary, not the point of the job. I have also built a Text2SQL data product and a UGC commercial value metric system from zero.
+From April to July 2026 I was an algorithm product manager on the AI platform team at AVIA (AviaGames), a US-funded mobile games company, on overseas user acquisition. I see that job as two things: stripping a surface request down to the real one, and deciding which parts belong to the model and which do not. Building things is how I probe the boundary, not the point of the job. I have also built a Text2SQL data product and a UGC commercial value metric system from zero.
 
 I spend more time writing requirements, setting boundaries and designing evaluation criteria than writing code. SQL, Python and n8n are my everyday tools, but I care more about whether a feature should exist and how we will tell if it worked. On technical questions I care most about whether something can be translated into a decision, for example how to trade off quality, cost and latency.
 
 Splitting product management into five dimensions, a general PM and an AI PM differ mainly in the middle three: capability boundaries, system design, and evaluation. A normal product behaves according to code, so you can predict it once written. An AI product behaves according to a model, so you first judge the boundary, then design the constraint structure, and finally use evals to make "good" observable. The five dimensions are problem and value, capability boundaries, system design, evaluation, and delivery constraints. The radar is a sketch of relative emphasis, not a capability assessment or a personal score.
+
+### Self-built projects
 
 | Project | Problem | Key tradeoff |
 | --- | --- | --- |
@@ -137,13 +145,17 @@ Splitting product management into five dimensions, a general PM and an AI PM dif
 | **UGC sentiment mining** | Negative signals in reviews surface too late | Turned static classification into a sliding time-window alert, and designed CPIV / VPV metrics so the result maps onto an operator action |
 | **Sales forecast and stockout alert** | Stockouts and overstock happen at the same time | Used WRMSSE instead of a generic error metric so the model's optimisation direction matches financial risk |
 
-At the gaming company, the business line was overseas user acquisition. What follows is about method only and contains no internal company data.
+### AVIA internship (AI platform team, algorithm product manager)
+
+The business line was overseas user acquisition. What follows is about method only and contains no internal company data.
+
+Three work streams and what each left behind: a creative Agent with 28 standard problem IDs and a 17-dimension creative tag system, with the architecture moving from Dify to A2A; a payback model attribution study covering 9 products over 40 weeks, showing 93% accuracy on large-budget products and under 30% on smaller ones, delivered with a five-layer framework and reference SQL; and a user profile tagging system with an L1 to L3 hierarchy and mutual exclusion rules that became the shared vocabulary of the team.
 
 - **Technical selection is a boundary decision.** I evaluated Agent Loop and A2A, and given model capability and framework maturity at the time, chose to reduce AI to atomic tools with the main flow in the backend. Rule-based diagnosis stayed in code; open-ended generation, which needed routing between different solutions, went to the model. That was a tradeoff under constraints, not a claim that AI could not do it.
 - **Building a prototype is becoming table stakes.** Tools like Cursor have lowered that barrier for everyone. What is harder is deciding what is worth building, how to judge whether an agent is any good, and how to carry the result through to a business outcome.
 - **A prompt is a product contract.** Input data contracts, output format, enum meanings, exception boundaries, self checks before execution: this layer is the same job as writing a PRD. Domain knowledge is then split into scenario-loaded skills rather than stuffed into one long prompt.
 - **Defining "good".** Building a test set and telling whether a change made things better or worse is the biggest difference between AI products and normal ones. I would rather put my time here than build one more prototype.
-- **Boundaries belong in the document.** The system generates plans; the media buyer is the operator. Over three months I ran the full path from frontend and API through backend to deployment, and built an MCP integration for two data sources, but the project never went live. No demo should imply one-click scaling.
+- **Boundaries belong in the document.** The system generates plans; the media buyer is the operator. Diagnosis and creative generation chains are live, while automated delivery is still at payload preview and mock stage. No demo should imply one-click scaling. That is a delivery boundary, not a failed project.
 
 A second line of work was a layered behavioural tagging system for overseas users, built jointly with algorithm, product and data colleagues, involving identity verification and risk scenarios. When I raised attribution requirements with the data science team, I brought a layered framework and reference SQL rather than just a question.
 
