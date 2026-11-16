@@ -7,7 +7,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-02-dark.png">
-  <img src="assets/block-02-light.png" width="820" alt="AI产品经理的理解：五个维度里多出来的是能力边界、系统设计、评测与验证；右侧为通用产品经理与 AI 产品经理在五个维度上的相对侧重雷达图。">
+  <img src="assets/block-02-light.png" width="820" alt="AI产品经理的理解：五个维度为需求穿透、资源编排、系统底层、Harness、边界安全；右侧雷达图对比通用产品经理与 AI 产品经理在五维上的相对侧重，不是能力评分。">
 </picture>
 
 <picture>
@@ -49,7 +49,7 @@
 
 写需求文档、定边界、设计评测口径的时间比写代码多。SQL / Python / n8n 是常用工具，但更在意一个功能该不该做、上线后用什么判断它有效；技术原理上更关心它能不能翻译成决策，比如质量、成本、延迟怎么权衡。
 
-把产品经理的能力拆成五个维度后，通用产品经理和 AI 产品经理的差别主要在中间三维：能力边界、系统设计、评测与验证。普通产品的行为由代码决定，写完就能预期；AI 产品的行为由模型决定，所以要先判断边界、再设计约束结构、最后用评测把「好不好」变成可观测的东西。五个维度是问题与价值、能力边界、系统设计、评测与验证、落地与约束。雷达图是相对侧重的示意，不是能力测评或个人评分。
+把 AI 产品经理的工作拆成五个维度，看的不是能力高低，是侧重往哪里迁移：需求穿透、资源编排、系统底层、Harness、边界安全。需求要先被拆开，识别并剥掉伪需求，剩下的真需求才决定这件事该不该做；资源也不只是撬动算法、数据与业务同事，还包括给 AI 配齐上下文、工具、数据和权限，这一层是传统产品工作里没有的。计算机底层原理与网络基础决定方案在工程上站不站得住，Harness 从原理到架构的认知决定能不能把模型、Skills、MCP 和工具链组装成可运行的系统；最后收在边界上，清楚模型在哪里停下来，并把安全范畴一并纳入设计。通用产品经理的侧重更多落在前两维，AI 产品经理更多落在后三维。雷达画的是相对侧重，不是能力测评或个人评分。
 
 ### 自建项目
 
@@ -93,7 +93,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-02-en-dark.png">
-  <img src="assets/block-02-en-light.png" width="820" alt="How I see the role. A radar chart comparing relative emphasis of a general product manager and an AI product manager across five dimensions: value, capability boundaries, system design, evaluation, and delivery. The extra weight sits in the middle three. The chart is schematic, not a capability score.">
+  <img src="assets/block-02-en-light.png" width="820" alt="How I see the role. A radar chart comparing relative emphasis of a general PM and an AI PM across five dimensions: true needs, resourcing, systems fundamentals, harness, and boundaries. The extra weight sits in the last three. The chart shows relative emphasis, not a capability score.">
 </picture>
 
 <picture>
@@ -135,7 +135,7 @@ From April to July 2026 I was an algorithm product manager on the AI platform te
 
 I spend more time writing requirements, setting boundaries and designing evaluation criteria than writing code. SQL, Python and n8n are my everyday tools, but I care more about whether a feature should exist and how we will tell if it worked. On technical questions I care most about whether something can be translated into a decision, for example how to trade off quality, cost and latency.
 
-Splitting product management into five dimensions, a general PM and an AI PM differ mainly in the middle three: capability boundaries, system design, and evaluation. A normal product behaves according to code, so you can predict it once written. An AI product behaves according to a model, so you first judge the boundary, then design the constraint structure, and finally use evals to make "good" observable. The five dimensions are problem and value, capability boundaries, system design, evaluation, and delivery constraints. The radar is a sketch of relative emphasis, not a capability assessment or a personal score.
+Split into five dimensions, the point is not who is stronger but where the emphasis moves: true needs, resourcing, systems fundamentals, harness, and boundaries. A request has to be taken apart first, stripping away the stated requirement to find the real one, because that decides whether the feature should exist. Resourcing now means two things: aligning algorithm, data and business colleagues, and equipping the AI itself with the right context, tools, data and permissions, which traditional product work did not require. Computer systems and networking fundamentals determine whether a design holds up in engineering; a full view of the AI harness from principles to architecture determines whether models, skills, MCP and tools can be assembled into something that runs. It closes at the boundary: knowing where the model stops and bringing the safety envelope into the design. A general PM puts more weight on the first two dimensions, an AI PM on the last three. The radar is a sketch of relative emphasis, not a capability assessment or a personal score.
 
 ### Self-built projects
 
