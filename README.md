@@ -1,4 +1,8 @@
-<p align="center"><sub>中文为默认 · <strong>English version</strong> 在页面底部（点击展开） · <a href="https://eastr5.github.io/blog/?lang=en">切换式双语主页 ↗</a></sub></p>
+<p align="center"><sub>默认显示中文版 · <strong>English version</strong> 在最下方，点击展开</sub></p>
+
+<p align="center">
+  <a href="https://eastr5.github.io/blog/"><img src="assets/badge-personal-site.png" alt="个人主页与写作 · Personal site" width="260"></a>
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/block-01-dark.png">
